@@ -9,7 +9,6 @@
   <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-15803d">
   <img alt="Interface CLI" src="https://img.shields.io/badge/Interface-CLI-0f766e">
   <img alt="Reports JSON Markdown CSV" src="https://img.shields.io/badge/Reports-JSON%20%7C%20Markdown%20%7C%20CSV-b45309">
-  <img alt="Tests 14 passing" src="https://img.shields.io/badge/Tests-14%20passing-15803d">
 </p>
 
 ## Overview
@@ -18,9 +17,9 @@ VulnScanner is built for a clear workflow. Give it a target, let it inspect head
 
 It is intentionally smaller and easier to understand than a giant security framework. The goal is not to do everything. The goal is to do a focused set of reconnaissance tasks well, present them clearly, and stay maintainable as the project grows.
 
-Today the project gives you:
+Currently:
 
-1. A real multi command CLI
+1. A multi command CLI
 2. Header analysis for common missing protections
 3. Endpoint discovery from wordlists, robots.txt, and sitemap.xml
 4. Lightweight technology fingerprinting
@@ -29,12 +28,6 @@ Today the project gives you:
 7. Saved scan history with report diffing
 8. Config driven defaults
 9. A test suite for the core logic
-
-## Why This Project Feels Different
-
-A lot of starter security tools are useful for one moment and painful to evolve. They work, but everything is tightly packed into one script, every new feature increases friction, and reporting quickly becomes messy.
-
-VulnScanner has already moved past that stage. It has package structure, reusable models, clean CLI entrypoints, config support, history storage, tests, and multiple report formats. That makes it a much better base for future work and a much stronger portfolio project.
 
 ## What It Can Do
 
