@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vulnscanner"
+version = "2.0.0"
+description = "A recon style CLI for surfacing weak headers, exposed endpoints, and suspicious content."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "gabehusol" }
+]
+keywords = ["security", "cli", "scanner", "recon", "headers"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Security",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "certifi>=2024.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+vulnscanner = "vulnscanner.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["vulnscanner*"]
+
+[tool.setuptools.package-data]
+vulnscanner = ["*.json"]

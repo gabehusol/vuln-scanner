@@ -1,0 +1,21 @@
+{
+    "shared": {
+        "timeout": 5.0,
+        "threads": 12,
+        "retries": 1,
+        "user_agent": "VulnScanner/2.0",
+        "json_out": "io/data.json",
+        "statuses": [200, 401, 403],
+        "max_body_bytes": 250000,
+        "verbose": false
+    },
+    "scan": {
+        "max_paths": 25,
+        "include_patterns": ["admin*", "*.env", "*.json", "*.zip"],
+        "exclude_patterns": ["static/*"],
+        "min_severity": "low"
+    },
+    "paths": {
+        "no_content_checks": true
+    }
+}

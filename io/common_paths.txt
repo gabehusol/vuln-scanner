@@ -1,0 +1,9 @@
+admin
+.env
+.git
+backup.zip
+config.json
+login
+dashboard
+status/200
+status/403
